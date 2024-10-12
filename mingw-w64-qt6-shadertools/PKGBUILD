@@ -4,7 +4,7 @@ _realname=qt6-shadertools
 pkgbase=mingw-w64-${_realname}
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}"
          "${MINGW_PACKAGE_PREFIX}-${_realname}-debug")
-_qtver=6.8.0
+_qtver=6.7.3
 pkgver=${_qtver/-/}
 pkgrel=1
 pkgdesc='APIs and tools in this module provide the producer functionality for the shader pipeline that allows Qt Quick to operate on Vulkan, Metal, and Direct3D, in addition to OpenGL. (mingw-w64)'
@@ -25,7 +25,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
              "rsync")
 _pkgfn="${_realname/6-/}-everywhere-src-${_qtver}"
 source=("https://download.qt.io/official_releases/qt/${pkgver%.*}/${_qtver}/submodules/${_pkgfn}.tar.xz")
-sha256sums=('44692dc93482374bf3b39e96c881fa08275f0bf82958b68a7e3c796b76d4c4cb')
+sha256sums=('74e512798c7ddbda354a2d8d975211454bbabb47afb7e598892067a5828c0995')
 
 build() {
   mkdir -p build-${MSYSTEM} && cd build-${MSYSTEM}

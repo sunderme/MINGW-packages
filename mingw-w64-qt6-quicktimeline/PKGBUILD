@@ -4,7 +4,7 @@ _realname=qt6-quicktimeline
 pkgbase=mingw-w64-${_realname}
 pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}"
          "${MINGW_PACKAGE_PREFIX}-${_realname}-debug")
-_qtver=6.8.0
+_qtver=6.7.3
 pkgver=${_qtver/-/}
 pkgrel=1
 pkgdesc='Qt module for keyframe-based timeline construction (mingw-w64)'
@@ -24,7 +24,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
              "rsync")
 _pkgfn="${_realname/6-/}-everywhere-src-${_qtver}"
 source=("https://download.qt.io/official_releases/qt/${pkgver%.*}/${_qtver}/submodules/${_pkgfn}.tar.xz")
-sha256sums=('1106a41bd8081903058a47a2bca3a147d594d15cc21006aa45f38c6e1dd91f08')
+sha256sums=('b7904667884c51de01b7990710001f885daf8d21a8b4188c1eece85f1503c902')
 
 build() {
   mkdir -p build-${MSYSTEM} && cd build-${MSYSTEM}

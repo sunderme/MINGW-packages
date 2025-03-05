@@ -81,7 +81,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-gcc-libs"
 source=(https://github.com/OSGeo/gdal/releases/download/v${pkgver}/gdal-${pkgver}.tar.gz
         001-fix-bindings-install-path.patch
         002-remove-manual-soversion.patch
-        gdal-poppler-25.02.patch::https://gitlab.com/inkscape/inkscape/-/commit/22304ae8034d067670a9f95022083a75fac92b4c.patch)
+        gdal-poppler-25.02.patch::https://github.com/OSGeo/gdal/commit/82f0abb203c971bc15e4f7a681d0409aa0aa3447.patch)
 sha256sums=('b1c739256d074be42d67c6c3d33eee94c90a490ebb02fcb7fc21c569a6fc78bd'
             'bfb0b42c8562bd45ae5cff71d42b042e398dff9a9c1f5bb08d8717a7753d4f3f'
             'fc815a58fe229db3c44bae15f405cafbeb82de91ec3f35564569c5bbecb1c3d7'

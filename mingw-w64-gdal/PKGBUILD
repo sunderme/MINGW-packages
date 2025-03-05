@@ -99,7 +99,8 @@ prepare() {
   cd "${srcdir}"/${_realname}-${pkgver}
   apply_patch_with_msg \
     001-fix-bindings-install-path.patch \
-    002-remove-manual-soversion.patch
+    002-remove-manual-soversion.patch \
+    gdal-poppler-25.02.patch
 }
 
 build() {

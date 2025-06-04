@@ -27,14 +27,13 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
              "rsync")
 _pkgfn="${_realname/6-/}-everywhere-src-${_qtver}"
 source=("https://download.qt.io/official_releases/qt/${pkgver%.*}/${_qtver}/submodules/${_pkgfn}.tar.xz"
-        "https://github.com/qt/qtgrpc/commit/514769d1bd595d0e54bbe34c0bd167636d4825dc.patch")
+        )
 sha256sums=('c34c869e203289b0fd695a1e5391840bc51b919a8b55e1ed1ff36b4cb923a750'
-            '3945b9d021b3e02fc532a03b1efe3fab9738973fd2c2aca36d3904cbbb66f834')
+            )
 
 prepare() {
   cd "${_pkgfn}"
 
-  patch -p1 -i ../514769d1bd595d0e54bbe34c0bd167636d4825dc.patch
 }
 
 build() {

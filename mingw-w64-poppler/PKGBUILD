@@ -40,11 +40,9 @@ depends=("${MINGW_PACKAGE_PREFIX}-cairo"
          "${MINGW_PACKAGE_PREFIX}-poppler-data"
          "${MINGW_PACKAGE_PREFIX}-zlib")
 source=(https://poppler.freedesktop.org/${_realname}-${pkgver}.tar.xz{,.sig}
-        test::git+https://gitlab.freedesktop.org/poppler/test.git#commit=ff3133cdb6cb496ee1d2c3231bfa35006a5e8410
         '0001-nopython-generate-enums.patch')
 sha256sums=('8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83'
             'SKIP'
-            '0efc9bd1797f0f0dfa514d4109e82c99d7e98c3e95587c70945508493074fcdf'
             '315356263b5ebee5431a2e079ac76492a8919a04a798f6c6d53c64f44b433db6')
 validpgpkeys=('CA262C6C83DE4D2FB28A332A3A6A4DB839EAA6D7') # "Albert Astals Cid <aacid@kde.org>"
 
